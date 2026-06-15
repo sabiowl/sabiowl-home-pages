@@ -1,8 +1,10 @@
-# Sabiowl Legal Pages — Jekyll 設定
+# Sabiowl Home Pages — Jekyll 設定
 # GitHub Pages のデフォルトテーマ minima を使用、日本語対応。
+# 旧 sabiowl-legal-pages を sabiowl-home-pages に統合 (2026-06-14、BUG-121)。
+# 法的文書 + リリースノート + 将来 FAQ 等を集約する公式情報ホーム。
 
-title: Sabiowl Legal
-description: Sabiowl の法的文書（プライバシーポリシー・利用規約）
+title: Sabiowl
+description: Sabiowl 公式情報サイト（リリースノート・プライバシーポリシー・利用規約）
 lang: ja
 url: https://subaru7105.github.io
 baseurl: /sabiowl-home-pages
