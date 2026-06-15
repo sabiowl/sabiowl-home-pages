@@ -1,0 +1,42 @@
+# Sabiowl Legal Pages — Jekyll 設定
+# GitHub Pages のデフォルトテーマ minima を使用、日本語対応。
+
+title: Sabiowl Legal
+description: Sabiowl の法的文書（プライバシーポリシー・利用規約）
+lang: ja
+url: https://subaru7105.github.io
+baseurl: /sabiowl-home-pages
+
+# テーマ（GitHub Pages サポート）
+theme: minima
+
+# 著作権 & 連絡先（minima テーマの footer に表示される）
+# author を文字列で渡すと minima が name として扱い、email をトップレベルに置くと
+# footer に正しく表示される（Hash で渡すと {"name"=>...} 形式の Ruby inspect になる）
+author: Sabiowl
+email: support@sabiowl.com
+
+# Jekyll プラグイン（GitHub Pages サポート範囲のみ）
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag
+
+# minima 設定
+minima:
+  social_links: []
+  skin: classic
+
+# Markdown
+markdown: kramdown
+kramdown:
+  input: GFM
+  hard_wrap: false
+
+# 除外
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
+  - vendor/
+  - .gitignore
