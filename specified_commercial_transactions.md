@@ -6,7 +6,7 @@ permalink: /specified_commercial_transactions.html
 
 # 特定商取引法に基づく表示
 
-<p style="color: #666; font-size: 0.9em;">最終改訂日: 2026 年 7 月 _ 日</p>
+<p style="color: #666; font-size: 0.9em;">最終改訂日: 2026 年 7 月 5 日</p>
 
 ---
 
@@ -16,15 +16,15 @@ permalink: /specified_commercial_transactions.html
 
 ## 販売事業者の名称
 
-【PM 記入: 個人開発者の場合は「氏名（屋号があれば: 屋号）」、法人の場合は法人名】
-
-例: 藤井昴 / Sabiowl Project
+<!-- 【PM 記入: 個人開発者の場合は「氏名（屋号があれば: 屋号）」、法人の場合は法人名】 -->
+合同会社YukimiWorks（ユキミワークス） / Sabiowl Project
+<!-- 例: 藤井昴 / Sabiowl Project -->
 
 ## 運営統括責任者
 
-【PM 記入: 氏名】
-
-例: 藤井昴
+<!-- 【PM 記入: 氏名】 -->
+藤井翔之
+<!-- 例: 藤井昴成 -->
 
 ## 所在地
 
@@ -40,8 +40,8 @@ permalink: /specified_commercial_transactions.html
 
 ## メールアドレス
 
-【PM 記入: お問い合わせ用メールアドレス、例: `support@sabiowl.com` または個人開発者の連絡先メール】
-
+<!-- 【PM 記入: お問い合わせ用メールアドレス、例: `support@sabiowl.com` または個人開発者の連絡先メール】 -->
+support@sabiowl.com
 ---
 
 ## 商品代金（販売価格）
