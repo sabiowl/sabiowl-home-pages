@@ -25,8 +25,14 @@ plugins:
   - jekyll-seo-tag
 
 # minima 設定
+# 【2026-06-27】公式 X (旧 Twitter) アカウント @sabiowlapp を social_links に追加。
+# minima テーマの footer に SNS リンクが自動表示される。GitHub Pages の minima
+# 2.5 系では `twitter:` キーで自動的に twitter.com/<handle> へのリンクとなるが、
+# 現状 X.com 側で twitter.com → x.com 自動リダイレクトされるため実用上問題なし。
+# 念のため index.md の「関連リンク」セクションにも明示的に X URL を追記済 (二重露出)。
 minima:
-  social_links: []
+  social_links:
+    twitter: sabiowlapp
   skin: classic
 
 # Markdown
