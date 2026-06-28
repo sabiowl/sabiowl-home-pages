@@ -6,7 +6,10 @@
 title: Sabiowl
 description: Sabiowl 公式情報サイト（リリースノート・プライバシーポリシー・利用規約）
 lang: ja
-url: https://subaru7105.github.io
+# 【2026-06-27】GitHub Pages 配信元 user を subaru7105 → sabiowl 組織に変更。
+# 旧: https://subaru7105.github.io/sabiowl-home-pages/
+# 新: https://sabiowl.github.io/sabiowl-home-pages/
+url: https://sabiowl.github.io
 baseurl: /sabiowl-home-pages
 
 # テーマ（GitHub Pages サポート）
