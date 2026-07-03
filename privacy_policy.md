@@ -6,7 +6,7 @@ permalink: /privacy_policy.html
 
 # Sabiowl プライバシーポリシー
 
-<p style="color: #666; font-size: 0.9em;">最終改訂日: 2026 年 7 月 _ 日（v1.0.1 アプリ内課金導入に合わせて改訂）</p>
+<p style="color: #666; font-size: 0.9em;">最終改訂日: 2026 年 7 月 4 日（v1.0.1 リリースに合わせて Sentry 診断データ・お問い合わせフォーム本文の記載を追加、および Apple App Store 提出前の App Privacy Nutrition Label との整合確認完了）</p>
 
 ---
 
@@ -36,6 +36,10 @@ permalink: /privacy_policy.html
 ### 端末情報
 - OS バージョン、アプリバージョン、端末モデル
 - プッシュ通知用トークン（FCM トークン）
+
+### 診断・サポートデータ
+- **診断データ**: クラッシュログ（Flutter・Django の未捕捉例外のスタックトレース、発生時のアプリ状態）およびパフォーマンスデータ（画面表示速度・API 応答時間の統計、10% サンプリング）。**個人識別情報は自動除去して収集**され、第三者トラッキング目的では利用しません
+- **お問い合わせフォーム本文および添付画像**（最大 5 枚、合計 10MB 以内）。返信のためメールアドレスと紐付けて保管し、対応完了から 1 年間保存します
 
 ---
 
@@ -88,7 +92,29 @@ PostHog のプライバシーポリシーは [https://posthog.com/privacy](https
 
 ---
 
-## 第 6 条（認証サービス: Firebase Authentication）
+## 第 6 条（クラッシュ・パフォーマンス監視: Sentry）
+
+本サービスでは、アプリの品質改善のため、Sentry（Functional Software, Inc. 運営、米国）が提供するクラッシュ監視およびパフォーマンス計測 SDK を利用しています。
+
+### 取得する情報
+- クラッシュ発生時のスタックトレース、アプリの状態スナップショット
+- 画面表示速度・API 応答時間の統計データ
+
+### 利用目的
+- 不具合の早期発見および品質改善
+
+### 個人情報の扱い
+SDK 側の `beforeSend` フックにより、ユーザー識別情報（メールアドレス、PlayerProfile の ID、氏名、端末固有識別子）を送信前に自動的に除去しています。当社は Sentry ダッシュボード上でも、クラッシュを**端末単位ではなく発生事象単位**で確認します。個人情報のスクラビングの詳細は [https://docs.sentry.io/platforms/flutter/enriching-events/scrubbing/](https://docs.sentry.io/platforms/flutter/enriching-events/scrubbing/) をご参照ください。
+
+### データの保存先
+Sentry Cloud（米国リージョン）に保存されます。
+
+### 詳細
+Sentry のプライバシーポリシーは [https://sentry.io/privacy/](https://sentry.io/privacy/) を、データ処理に関する規約は [https://sentry.io/legal/dpa/](https://sentry.io/legal/dpa/) をご参照ください。
+
+---
+
+## 第 7 条（認証サービス: Firebase Authentication）
 
 本サービスでは、ユーザー認証のため、Google が提供する「Firebase Authentication」を利用しています。
 
@@ -113,7 +139,7 @@ Firebase のプライバシーポリシーは [https://firebase.google.com/suppo
 
 ---
 
-## 第 7 条（プッシュ通知: Firebase Cloud Messaging）
+## 第 8 条（プッシュ通知: Firebase Cloud Messaging）
 
 本サービスでは、プッシュ通知の配信のため、Google が提供する「Firebase Cloud Messaging（FCM）」を利用しています。
 
@@ -133,7 +159,7 @@ Firebase のプライバシーポリシーは [https://firebase.google.com/suppo
 
 ---
 
-## 第 8 条（Google カレンダー連携）
+## 第 9 条（Google カレンダー連携）
 
 本サービスでは、Google カレンダーから本サービスへ予定を取り込む片方向同期機能を提供しています。ご利用にはユーザーの明示的な同意（設定から「Google カレンダー連携」の有効化、およびカレンダー画面の「Google カレンダーを同期」操作）が必要です。
 
@@ -159,7 +185,7 @@ Google のプライバシーポリシーは [https://policies.google.com/privacy
 
 ---
 
-## 第 9 条（メール送信: Resend）
+## 第 10 条（メール送信: Resend）
 
 本サービスでは、お問い合わせへの返信および重要なお知らせの送信のため、Resend Inc. が提供するメール配信サービス「Resend」を利用しています。
 
@@ -176,7 +202,7 @@ Resend のプライバシーポリシーは [https://resend.com/legal/privacy-po
 
 ---
 
-## 第 10 条（決済処理: Apple App Store および RevenueCat）
+## 第 11 条（決済処理: Apple App Store および RevenueCat）
 
 本サービスでは、v1.0.1（2026 年 7 月）よりアプリ内課金商品（買い切りダイヤパック）を提供しています。決済処理および領収書検証にあたって、以下の外部サービスを利用しています。
 
@@ -222,7 +248,7 @@ RevenueCat のプライバシーポリシーは [https://www.revenuecat.com/priv
 
 ---
 
-## 第 11 条（データ保管先: Render）
+## 第 12 条（データ保管先: Render）
 
 本サービスのバックエンドサーバーおよびデータベースは、Render Services Inc. が提供する「Render」のクラウドインフラ上で運用されています。
 
@@ -242,7 +268,7 @@ Render のプライバシーポリシーは [https://render.com/privacy](https:/
 
 ---
 
-## 第 12 条（データの削除）
+## 第 13 条（データの削除）
 
 ユーザーは、本サービスの「設定 → アカウントを削除」機能により、自身のアカウントおよび関連するすべてのデータを削除できます。
 
@@ -264,7 +290,7 @@ Render のプライバシーポリシーは [https://render.com/privacy](https:/
 
 ---
 
-## 第 13 条（改訂）
+## 第 14 条（改訂）
 
 本プライバシーポリシーは、必要に応じて改訂することがあります。重要な変更がある場合は、本サービス内でお知らせします。
 
