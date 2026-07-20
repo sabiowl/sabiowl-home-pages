@@ -6,7 +6,7 @@ permalink: /privacy_policy.html
 
 # Sabiowl プライバシーポリシー
 
-<p style="color: #666; font-size: 0.9em;">最終改訂日: 2026 年 7 月 5 日（Flutter アプリ内表示 (FEAT-396) との整合修正 — 第 4 条の 2「フレンド機能における情報共有」を追加、第 4 条の但し書きを更新）</p>
+<p style="color: #666; font-size: 0.9em;">最終改訂日: 2026 年 7 月 19 日（第 9 条「Google カレンダー連携」を Google API OAuth 検証申請要件に合わせて更新 — 保存先を端末内 SQLite に修正、Google API Services User Data Policy 準拠 (Limited Use) の明記、第三者共有ポリシーとデータ削除方法を追加）</p>
 
 ---
 
@@ -198,7 +198,22 @@ Firebase のプライバシーポリシーは [https://firebase.google.com/suppo
 - 「Google カレンダー連携を解除」ボタンで、取り込んだ Google 起源のデータを削除し、以後の連携を停止できます。
 
 ### データの保存先
-取り込んだイベントは、本サービスのバックエンドサーバー（Render Singapore リージョン）に保存されます。
+取り込んだ Google カレンダーの予定本文（タイトル・日時・メモ）は、**ユーザーの端末内 SQLite** に保存されます。本サービスのバックエンドサーバーへは送信されません（v1.0.2 以降）。バックエンドサーバーへは、予定の「完了状態」（達成したか否かを示すフラグ）のみ、ユーザーの進捗管理のために送信されます。
+
+### 第三者との共有
+本サービスから取得した Google カレンダーのユーザーデータを、広告、分析（アナリティクス）、その他いかなる第三者へも販売・共有・転送することはありません。
+
+### Google API Services User Data Policy の遵守
+本サービスによる Google ユーザーデータの利用は、[Google API Services User Data Policy](https://developers.google.com/terms/api-services-user-data-policy)（以下「本ポリシー」）に定める要件、および本ポリシーが求める [Limited Use](https://developers.google.com/terms/api-services-user-data-policy#limited-use) の要件を遵守します。具体的には:
+
+- 取得した Google カレンダーデータは、本プライバシーポリシーおよびアプリ内 UI でユーザーに開示した機能（タイムライン表示および進捗管理）のみに使用します。
+- 他ユーザーへの譲渡・販売、広告目的での利用、機械学習モデルの学習データとしての利用は一切行いません。
+- 上記機能の提供に必要な範囲を超えて、Google ユーザーデータを人間が閲覧することはありません（例外: ユーザーからの明示的な同意を得た場合、法令上求められる場合、集計済み・匿名化済みの内部運用データとして利用する場合）。
+
+### データ削除の方法
+以下いずれかの操作で、本サービスに取り込まれた Google カレンダーデータをすべて削除できます:
+1. カレンダー画面のメニューから「Google カレンダー連携を解除」を選択
+2. アカウント削除（設定画面 → アカウント削除）を実行 — 全データが端末内・サーバー両方から削除されます
 
 ### 詳細
 Google のプライバシーポリシーは [https://policies.google.com/privacy](https://policies.google.com/privacy) をご参照ください。
