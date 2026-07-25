@@ -7,10 +7,12 @@ title: Sabiowl
 description: Sabiowl 公式情報サイト（リリースノート・プライバシーポリシー・利用規約）
 lang: ja
 # 【2026-06-27】GitHub Pages 配信元 user を subaru7105 → sabiowl 組織に変更。
+# 【2026-07-19】カスタムドメイン sabiowl.com へ切替 (Google OAuth verification 要件対応)。
 # 旧: https://subaru7105.github.io/sabiowl-home-pages/
-# 新: https://sabiowl.github.io/sabiowl-home-pages/
-url: https://sabiowl.github.io
-baseurl: /sabiowl-home-pages
+# 中: https://sabiowl.github.io/sabiowl-home-pages/
+# 新: https://sabiowl.com/ (custom domain via CNAME)
+url: https://sabiowl.com
+baseurl: ""
 
 # テーマ（GitHub Pages サポート）
 theme: minima
