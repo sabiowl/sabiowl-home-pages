@@ -39,6 +39,12 @@ iOS / Android 対応のモバイルアプリです。習慣を記録するたび
 - 📜 [利用規約](terms_of_service.html) — 本サービスのご利用条件について
 - 🛒 [特定商取引法に基づく表示](specified_commercial_transactions.html) — アプリ内課金商品の販売事業者情報・返品規定等
 
+### English
+
+- 🌏 [Privacy Policy](privacy_policy_en.html) — how we handle your personal and usage information
+- 📜 [Terms of Use](terms_of_service_en.html) — the conditions for using Sabiowl
+- 🛒 [Legal & Consumer Information](legal_consumer_info_en.html) — who provides the app, prices, delivery, and refunds
+
 ---
 
 ## 🌐 関連リンク
