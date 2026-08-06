@@ -1,0 +1,54 @@
+{%- comment -%}
+【FEAT-519 Phase 2 (2026-08-06)】minima 2.5.1 の `_includes/head.html` を上書き。
+
+## なぜコピーが必要だったか
+
+hreflang は `<link rel="alternate">` で **`<head>` に置く必要がある** (Google 仕様)。
+子 layout の中身は minima の `<main>` 内に描画されるため、head には届かない。
+
+minima 3.x には `custom-head.html` という拡張フックがあるが、
+**2.5.1 には無い** (実物を取得して確認済)。そのため head 自体を上書きしている。
+
+## テーマ更新でずれるリスクについて
+
+GitHub Pages は minima を **2.5.1 に固定**している (pages.github.com/versions)。
+そのため当面ずれない。**GitHub Pages が minima を上げたら、本ファイルを
+新しい版に追随させること** —— 下の `<head>` 本体は 2.5.1 のコピーで、
+FEAT-519 の追加分は末尾の hreflang ブロックだけ。
+
+原本: https://github.com/jekyll/minima/blob/v2.5.1/_includes/head.html
+{%- endcomment -%}
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  {%- seo -%}
+  <link rel="stylesheet" href="{{ "/assets/main.css" | relative_url }}">
+  {%- feed_meta -%}
+  {%- if jekyll.environment == 'production' and site.google_analytics -%}
+    {%- include google-analytics.html -%}
+  {%- endif -%}
+
+  {%- comment -%}
+  ── ここから FEAT-519 の追加分 ────────────────────────────────────────
+
+  hreflang は **相互参照**でなければ Google に無視される。
+  ja / en の両ページが「自分自身を含む全 alternate」を列挙する必要があるので、
+  対応表に載っている組は ja・en の両方を出す。
+
+  x-default は「言語を特定しない既定の着地点」。本サイトは日本語が主なので
+  ja 版を指す。
+
+  対応表に無いページ (英語版が未整備) では **何も出さない**。
+  存在しない URL を alternate として宣言すると、Google が 404 を
+  クロールしに行き、hreflang クラスタ全体が無効になる。
+  {%- endcomment -%}
+  {%- assign cur = page.url -%}
+  {%- for pair in site.data.i18n.pairs -%}
+    {%- if pair.ja == cur or pair.en == cur -%}
+  <link rel="alternate" hreflang="ja" href="{{ pair.ja | absolute_url }}">
+  <link rel="alternate" hreflang="en" href="{{ pair.en | absolute_url }}">
+  <link rel="alternate" hreflang="x-default" href="{{ pair.ja | absolute_url }}">
+    {%- endif -%}
+  {%- endfor -%}
+</head>

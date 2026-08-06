@@ -41,7 +41,9 @@ iOS / Android 対応のモバイルアプリです。習慣を記録するたび
 
 ### English
 
-- 🌏 [Privacy Policy](privacy_policy_en.html) — how we handle your personal and usage information
+**[🌏 English site](/en/)** — app overview, plus the documents below
+
+- 🪶 [Privacy Policy](privacy_policy_en.html) — how we handle your personal and usage information
 - 📜 [Terms of Use](terms_of_service_en.html) — the conditions for using Sabiowl
 - 🛒 [Legal & Consumer Information](legal_consumer_info_en.html) — who provides the app, prices, delivery, and refunds
 

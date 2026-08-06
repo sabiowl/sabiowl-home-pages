@@ -55,6 +55,17 @@ def page_url(path: Path, fm: dict[str, str]) -> str:
     return f'/{path.stem}.html'
 
 
+def all_pages() -> dict[Path, dict[str, str]]:
+    """検証対象のページ。
+
+    【FEAT-519 Phase 2】英語 TOP を `en/index.md` に置いたので、
+    ルート直下だけを見ていると **見落とす**。`en/` 配下も対象に含める。
+    `rglob` にしないのは `_site/` 等を拾わないため。
+    """
+    paths = sorted(ROOT.glob('*.md')) + sorted(ROOT.glob('en/*.md'))
+    return {p: front_matter(p) for p in paths if p.name != 'README.md'}
+
+
 def load_pairs() -> list[dict[str, str]]:
     """`_data/i18n.yml` の pairs を読む (PyYAML 非依存の素朴パーサ)。"""
     text = (ROOT / '_data/i18n.yml').read_text(encoding='utf-8')
@@ -85,9 +96,9 @@ def load_pairs() -> list[dict[str, str]]:
 
 
 def main() -> int:
-    pages = {p: front_matter(p) for p in sorted(ROOT.glob('*.md'))
-             if p.name != 'README.md'}
-    urls = {page_url(p, fm): p.name for p, fm in pages.items()}
+    pages = all_pages()
+    urls = {page_url(p, fm): str(p.relative_to(ROOT).as_posix())
+            for p, fm in pages.items()}
     pairs = load_pairs()
 
     errors: list[str] = []
@@ -108,27 +119,53 @@ def main() -> int:
     listed_en = {pair.get('en') for pair in pairs}
     for p, fm in pages.items():
         if fm.get('lang') == 'en' and page_url(p, fm) not in listed_en:
+            rel = p.relative_to(ROOT).as_posix()
             errors.append(
-                f'{p.name} は lang: en だが _data/i18n.yml の pairs に無い。'
+                f'{rel} は lang: en だが _data/i18n.yml の pairs に無い。'
                 f'切替リンクが出ない')
 
     # ③ 英語ページに lang: en が付いていること
     #    ← minima は page.lang を見る。無いと <html lang="ja"> のまま配信され、
     #      スクリーンリーダーが英文を日本語として読む
+    by_url = {page_url(p, fm): (p, fm) for p, fm in pages.items()}
     for url in listed_en:
-        name = urls.get(url)
-        if name is None:
-            continue
-        fm = next(fm for p, fm in pages.items() if p.name == name)
+        entry = by_url.get(url)
+        if entry is None:
+            continue          # ① が報告済み
+        p, fm = entry
         if fm.get('lang') != 'en':
-            errors.append(f'{name}: lang: en が無い (<html lang="ja"> で配信される)')
+            errors.append(
+                f'{urls[url]}: lang: en が無い (<html lang="ja"> で配信される)')
 
     # ④ 全ページが切替リンク付きの layout を使っていること
     for p, fm in pages.items():
         if fm.get('layout') != 'page_with_lang':
+            rel = p.relative_to(ROOT).as_posix()
             errors.append(
-                f'{p.name}: layout が {fm.get("layout")!r}。'
+                f'{rel}: layout が {fm.get("layout")!r}。'
                 f'page_with_lang でないと切替リンクが出ない')
+
+    # ⑤ 【Phase 2】hreflang が壊れていないこと
+    #
+    #    Google は hreflang を **相互参照**で検証する。片側からしか宣言されて
+    #    いなかったり、存在しない URL を指していたりすると **クラスタ全体を無視**
+    #    する。`_includes/head.html` は対応表を素直に出すだけなので、
+    #    対応表の健全性がそのまま hreflang の健全性になる。
+    seen: dict[str, str] = {}
+    for pair in pairs:
+        for side in ('ja', 'en'):
+            url = pair.get(side)
+            if url is None:
+                continue
+            # 同じ URL が 2 組に出ると、そのページに矛盾する alternate が並ぶ
+            if url in seen:
+                errors.append(
+                    f'{url} が対応表に 2 回出ている ({seen[url]} と重複)。'
+                    f'hreflang が矛盾する')
+            seen[url] = f'{pair.get("ja")} ⇄ {pair.get("en")}'
+        # ja と en が同じ URL を指すと自己参照になる
+        if pair.get('ja') == pair.get('en'):
+            errors.append(f'ja と en が同じ URL を指している: {pair}')
 
     print(f'ページ {len(pages)} 件 / 対応表 {len(pairs)} 組を検証\n')
     if errors:

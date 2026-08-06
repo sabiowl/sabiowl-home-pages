@@ -18,6 +18,15 @@
 # index.md だけ permalink が無く、`page.url` は `/` になる。
 
 pairs:
+  # 【FEAT-519 Phase 2】TOP。英語版だけ `/en/` 配下にあり、法務 3 ページの
+  # `*_en.html` と **命名が揃っていない**が、これは意図的:
+  #   - 法務 3 ページは上記のとおり URL を動かせない (ストア登録済 + アプリ直リンク)
+  #   - TOP は共有・入力される URL なので `sabiowl.com/en` の方が実用的
+  #   - Phase 3 で追加する help / faq / release_notes の英語版は URL 制約が
+  #     無いので `/en/` 配下に置ける
+  - ja: /
+    en: /en/
+
   - ja: /privacy_policy.html
     en: /privacy_policy_en.html
 
