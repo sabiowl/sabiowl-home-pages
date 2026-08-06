@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page_with_lang
 title: 利用規約
 permalink: /terms_of_service.html
 ---

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page_with_lang
 title: 使い方ガイド
 permalink: /help.html
 ---

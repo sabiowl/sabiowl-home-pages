@@ -1,0 +1,67 @@
+---
+layout: default
+---
+{%- comment -%}
+【FEAT-519 Phase 1 (2026-08-06)】言語切替リンクを全ページの先頭に出す。
+
+## minima の default を「継承」している (コピーしていない)
+
+`layout: default` を指定した **薄いラッパー**なので、minima 側の更新は
+そのまま反映される。minima の `_layouts/default.html` を丸ごとコピーして
+改変すると、以後テーマの修正を手で追う羽目になる (FEAT-519 Pre-mortem S2)。
+
+なお本ファイルを `default.html` という名前にしてはいけない。
+`layout: default` が自分自身を指して無限再帰する。
+
+## `<html lang>` は front matter が担当する
+
+minima 2.5 の default.html は
+`<html lang="{{ page.lang | default: site.lang | default: "en" }}">`
+なので、英語ページ側の front matter に `lang: en` を書けば切り替わる。
+本 layout は関与しない。
+
+## GitHub Pages は Jekyll を safe mode で動かす
+
+`jekyll-polyglot` 等の多言語プラグインは whitelist 外で使えないため、
+素の Liquid + `_data/i18n.yml` だけで完結させている。
+{%- endcomment -%}
+
+{%- assign cur = page.url -%}
+{%- assign alt_url = "" -%}
+{%- assign alt_label = "" -%}
+{%- for pair in site.data.i18n.pairs -%}
+  {%- if pair.ja == cur -%}
+    {%- assign alt_url = pair.en -%}
+    {%- assign alt_label = site.data.i18n.labels.to_en -%}
+  {%- elsif pair.en == cur -%}
+    {%- assign alt_url = pair.ja -%}
+    {%- assign alt_label = site.data.i18n.labels.to_ja -%}
+  {%- endif -%}
+{%- endfor -%}
+
+{%- comment -%}
+対応ページが無いときは **リンク切れにせず**、その旨を表示する。
+英語版が無いページに英語話者が来たときに読ませる文なので、
+ja ページ側の案内は英語で書く (`labels.no_en`)。
+{%- endcomment -%}
+{%- if page.lang == "en" -%}
+  {%- assign fallback_label = site.data.i18n.labels.no_ja -%}
+{%- else -%}
+  {%- assign fallback_label = site.data.i18n.labels.no_en -%}
+{%- endif -%}
+
+<div class="lang-switch" style="margin: 0 0 1.5em; padding-bottom: 0.6em;
+     border-bottom: 1px solid #e8e8e8; font-size: 0.9em; text-align: right;">
+  <span aria-hidden="true" style="color: #828282;">🌐</span>
+  {%- if alt_url != "" -%}
+    <a href="{{ alt_url | relative_url }}"
+       {%- if page.lang == "en" %} lang="ja" hreflang="ja"{% else %} lang="en" hreflang="en"{% endif -%}
+       >{{ alt_label }}</a>
+  {%- else -%}
+    <span style="color: #828282;"
+          {%- if page.lang == "en" %} lang="ja"{% else %} lang="en"{% endif -%}
+          >{{ fallback_label }}</span>
+  {%- endif -%}
+</div>
+
+{{ content }}

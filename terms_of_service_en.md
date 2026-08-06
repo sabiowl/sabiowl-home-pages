@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page_with_lang
 title: Terms of Use
 permalink: /terms_of_service_en.html
+lang: en
 ---
 
 # Sabiowl Terms of Use

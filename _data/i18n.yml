@@ -1,0 +1,45 @@
+# 【FEAT-519 Phase 1 (2026-08-06)】日本語ページ ⇄ 英語ページの対応表。
+#
+# `_layouts/page_with_lang.html` がこの表を引いて言語切替リンクを出す。
+# **英語版ページを追加したら、ここに 1 行足すこと。**
+#
+# ## URL を動かしてはいけない
+#
+# `*_en.html` の URL は
+#   - App Store Connect / Google Play にプライバシーポリシー URL として登録済
+#   - アプリ内 `mobile/lib/core/constants/app_urls.dart` が直リンク
+#     (CI テスト `app_urls_locale_test.dart` が縛っている)
+# のため、**動かすとストア審査とアプリの両方が壊れる**。
+# 一般的な `/en/` 配下への集約は行わない (FEAT-519 §3)。
+#
+# ## 値は `page.url` と完全一致させること
+#
+# 各ページの `permalink` がそのまま `page.url` になる。
+# index.md だけ permalink が無く、`page.url` は `/` になる。
+
+pairs:
+  - ja: /privacy_policy.html
+    en: /privacy_policy_en.html
+
+  - ja: /terms_of_service.html
+    en: /terms_of_service_en.html
+
+  # 特商法は日本国内法で英語圏に同等制度が無いため、英語版は直訳ではなく
+  # 「販売者情報 + 消費者向け情報」として書き起こしてある。
+  # そのため **URL の対応が 1:1 でない** (名前の異なるページを指す)。
+  - ja: /specified_commercial_transactions.html
+    en: /legal_consumer_info_en.html
+
+  # ── 英語版が未整備 (FEAT-519 Phase 2 / Phase 3) ───────────────────────
+  # 対応表に無いページでは「英語版が無い」旨を表示する (リンク切れにしない)。
+  #   /                      TOP        -> Phase 2 で作成
+  #   /help.html             使い方      -> Phase 3
+  #   /faq.html              FAQ        -> Phase 3
+  #   /release_notes.html    リリースノート -> Phase 3
+
+labels:
+  to_en: "English"
+  to_ja: "日本語"
+  # 対応ページが無いときの案内。**英語話者に読ませる**文なので英語で書く。
+  no_en: "English version not available"
+  no_ja: "日本語版はありません"

@@ -53,3 +53,6 @@ exclude:
   - Gemfile.lock
   - vendor/
   - .gitignore
+  # 【FEAT-519 Phase 1 (2026-08-06)】push 前に走らせる検証スクリプト。
+  # サイトには含めない。
+  - scripts/

@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page_with_lang
 title: リリースノート
 permalink: /release_notes.html
 ---

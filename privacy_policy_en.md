@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page_with_lang
 title: Privacy Policy
 permalink: /privacy_policy_en.html
+lang: en
 ---
 
 # Sabiowl Privacy Policy

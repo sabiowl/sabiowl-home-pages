@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page_with_lang
 title: よくあるご質問
 permalink: /faq.html
 ---

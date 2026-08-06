@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page_with_lang
 title: 特定商取引法に基づく表示
 permalink: /specified_commercial_transactions.html
 ---

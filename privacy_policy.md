@@ -1,5 +1,5 @@
 ---
-layout: default
+layout: page_with_lang
 title: プライバシーポリシー
 permalink: /privacy_policy.html
 ---

@@ -1,7 +1,8 @@
 ---
-layout: default
+layout: page_with_lang
 title: Legal & Consumer Information
 permalink: /legal_consumer_info_en.html
+lang: en
 ---
 
 # Legal & Consumer Information
