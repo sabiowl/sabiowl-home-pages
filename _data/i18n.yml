@@ -39,12 +39,20 @@ pairs:
   - ja: /specified_commercial_transactions.html
     en: /legal_consumer_info_en.html
 
-  # ── 英語版が未整備 (FEAT-519 Phase 2 / Phase 3) ───────────────────────
+  # 【FEAT-519 Phase 3】使い方 / FAQ / リリースノート。
+  # URL 制約が無いページなので `/en/` 配下に置いてある。
+  - ja: /help.html
+    en: /en/help.html
+
+  - ja: /faq.html
+    en: /en/faq.html
+
+  - ja: /release_notes.html
+    en: /en/release_notes.html
+
+  # ── 英語版が未整備のページ ────────────────────────────────────────────
   # 対応表に無いページでは「英語版が無い」旨を表示する (リンク切れにしない)。
-  #   /                      TOP        -> Phase 2 で作成
-  #   /help.html             使い方      -> Phase 3
-  #   /faq.html              FAQ        -> Phase 3
-  #   /release_notes.html    リリースノート -> Phase 3
+  # 2026-08-06 時点で **未整備のページは無い** (全 7 トピックに英語版がある)。
 
 labels:
   to_en: "English"

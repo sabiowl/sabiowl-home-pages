@@ -39,17 +39,12 @@ documents, contact details and release notes.
 
 ## 📄 Documents
 
+- 📖 [User Guide](/en/help.html) — how each screen works, with steps and video
+- ❓ [FAQ](/en/faq.html) — billing, troubleshooting, account questions
+- 📝 [Release Notes](/en/release_notes.html) — what changed in each version
 - 🪶 [Privacy Policy](/privacy_policy_en.html) — how we handle your personal and usage information
 - 📜 [Terms of Use](/terms_of_service_en.html) — the conditions for using Sabiowl
 - 🛒 [Legal & Consumer Information](/legal_consumer_info_en.html) — who provides the app, prices, delivery, and refunds
-
-### Available in Japanese only
-
-These pages have not been translated yet. They are written in Japanese.
-
-- 📖 [使い方ガイド (User guide)](/help.html) — how each screen works, with steps and video
-- ❓ [よくあるご質問 (FAQ)](/faq.html) — billing, troubleshooting, account questions
-- 📝 [リリースノート (Release notes)](/release_notes.html) — what changed in each version
 
 ---
 
