@@ -55,7 +55,7 @@ iOS 向けのモバイルアプリです。習慣を記録するたびに経験�
 
 ## 🌐 関連リンク
 
-- **アプリ本体**: App Store にて配信中（iOS）
+- **アプリ本体**: [App Store](https://apps.apple.com/jp/app/sabiowl-%E7%BF%92%E6%85%A3rpg/id6772130388) にて配信中（iOS 15.0 以降）
 - **公式 X (旧 Twitter)**: [@sabiowlapp](https://x.com/sabiowlapp) — 最新情報・更新情報をお届けします
 - **お問い合わせ**: アプリ内「設定 → お問い合わせ」よりご連絡ください
 

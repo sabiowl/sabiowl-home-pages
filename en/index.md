@@ -56,8 +56,9 @@ documents, contact details and release notes.
 
 ## 🌐 Links
 
-- **The app**: available on the App Store. It is currently released in the
-  Japanese App Store only; other regions are coming
+- **The app**: [available on the App Store](https://apps.apple.com/jp/app/sabiowl-%E7%BF%92%E6%85%A3rpg/id6772130388)
+  (iOS 15.0 or later). It is currently released in the Japanese App Store only;
+  other regions are coming
 - **Official X (Twitter)**: [@sabiowlapp](https://x.com/sabiowlapp) — news and updates
 - **Contact**: from inside the app, open **Settings → Contact us**
 

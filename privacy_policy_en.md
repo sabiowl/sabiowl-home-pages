@@ -7,7 +7,7 @@ lang: en
 
 # Sabiowl Privacy Policy
 
-<p style="color: #666; font-size: 0.9em;">Last updated: 2 August 2026</p>
+<p style="color: #666; font-size: 0.9em;">Last updated: 11 August 2026 (Article 12: the database provider, Neon, is now disclosed alongside Render, and the entry for imported Google Calendar data was corrected to match Article 9 — the body of an event is stored only on your device)</p>
 
 ---
 
@@ -366,26 +366,34 @@ See RevenueCat's privacy policy at
 
 ---
 
-## Article 12 (Where data is stored: Render)
+## Article 12 (Where data is stored: Render / Neon)
 
-The Service's backend servers and database run on the cloud infrastructure of
-"Render", provided by Render Services Inc.
+The Service's backend servers run on the cloud infrastructure of "Render",
+provided by Render Services Inc. The database runs on the cloud infrastructure
+of "Neon", provided by Neon, LLC (a Databricks, Inc. group company).
 
 ### Data stored
 - User account information (email address, display name, authentication identifiers)
 - All data created within the Service (habits, timeline entries, characters, gacha
   history, etc.)
-- Event data imported from Google Calendar
+- The completion state of events imported from Google Calendar (a flag recording
+  whether you completed them)
+
+> Note: the body of events imported from Google Calendar (title, date and time,
+> notes) is stored only in SQLite on your device and is not sent to the Service's
+> backend servers (v1.0.2 and later). See Article 9 for details.
 
 ### Storage region
-Singapore (Asia Pacific).
+Singapore (Asia Pacific), for both.
 
 ### Security
 Communications are encrypted with TLS, and the database is accessible only from
 authenticated backend servers.
 
 ### Further information
-See Render's privacy policy at [https://render.com/privacy](https://render.com/privacy).
+See Render's privacy policy at [https://render.com/privacy](https://render.com/privacy),
+and Neon's privacy policy (the Databricks Privacy Notice) at
+[https://www.databricks.com/legal/privacynotice](https://www.databricks.com/legal/privacynotice).
 
 ---
 

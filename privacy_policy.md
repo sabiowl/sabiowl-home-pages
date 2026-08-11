@@ -6,7 +6,7 @@ permalink: /privacy_policy.html
 
 # Sabiowl プライバシーポリシー
 
-<p style="color: #666; font-size: 0.9em;">最終改訂日: 2026 年 7 月 26 日（第 2 条「取得する情報」に「音声入力（仮メモ機能、v1.0.4 以降）」を追記 — 音声そのものは当社サーバーに送信されないこと、OS 提供元の音声認識サービスを利用することを明記）</p>
+<p style="color: #666; font-size: 0.9em;">最終改訂日: 2026 年 8 月 11 日（第 12 条にデータベース提供元 Neon を Render と併記して開示、および取り込んだ Google カレンダーデータの記載を第 9 条と整合させ「予定の本文は端末内にのみ保存」であることを明記）</p>
 
 ---
 
@@ -288,23 +288,25 @@ RevenueCat のプライバシーポリシーは [https://www.revenuecat.com/priv
 
 ---
 
-## 第 12 条（データ保管先: Render）
+## 第 12 条（データ保管先: Render / Neon）
 
-本サービスのバックエンドサーバーおよびデータベースは、Render Services Inc. が提供する「Render」のクラウドインフラ上で運用されています。
+本サービスのバックエンドサーバーは Render Services Inc. が提供する「Render」の、データベースは Neon, LLC（Databricks, Inc. のグループ会社）が提供する「Neon」の、それぞれのクラウドインフラ上で運用されています。
 
 ### 保管されるデータ
 - ユーザーアカウント情報（メールアドレス、表示名、認証識別子）
 - 本サービス内で作成された全データ（習慣、タイムライン、キャラクター、ガチャ履歴等）
-- Google カレンダーから取り込んだ予定データ
+- Google カレンダーから取り込んだ予定の「完了状態」（達成したか否かを示すフラグ）
+
+> ※ Google カレンダーから取り込んだ予定の本文（タイトル・日時・メモ）は、ユーザーの端末内 SQLite にのみ保存され、本サービスのバックエンドサーバーへは送信されません（v1.0.2 以降）。詳細は第 9 条をご参照ください。
 
 ### 保管リージョン
-シンガポール（Asia Pacific）
+いずれもシンガポール（Asia Pacific）
 
 ### セキュリティ
 通信は TLS で暗号化され、データベースへのアクセスは認証されたバックエンドサーバーからのみ可能です。
 
 ### 詳細
-Render のプライバシーポリシーは [https://render.com/privacy](https://render.com/privacy) をご参照ください。
+Render のプライバシーポリシーは [https://render.com/privacy](https://render.com/privacy) を、Neon のプライバシーポリシー（Databricks プライバシーノーティス）は [https://www.databricks.com/legal/privacynotice](https://www.databricks.com/legal/privacynotice) をご参照ください。
 
 ---
 
