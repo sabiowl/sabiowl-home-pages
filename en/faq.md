@@ -7,7 +7,7 @@ lang: en
 
 # Frequently Asked Questions
 
-<p style="color: #666; font-size: 0.9em;">Last updated: 9 August 2026</p>
+<p style="color: #666; font-size: 0.9em;">Last updated: 11 August 2026</p>
 
 ---
 

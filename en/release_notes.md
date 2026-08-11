@@ -7,7 +7,7 @@ lang: en
 
 # Sabiowl Release Notes
 
-<p style="color: #666; font-size: 0.9em;">Last updated: 9 August 2026</p>
+<p style="color: #666; font-size: 0.9em;">Last updated: 11 August 2026</p>
 
 ---
 
@@ -16,7 +16,7 @@ What we are preparing next is at the end.
 
 ---
 
-## v1.0.5 (latest)
+## v1.0.5 (released 30 July 2026)
 
 Adjustments so that less of what you build up goes to waste.
 

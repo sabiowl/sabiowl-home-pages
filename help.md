@@ -6,7 +6,7 @@ permalink: /help.html
 
 # 使い方ガイド
 
-<p style="color: #666; font-size: 0.9em;">最終更新日: 2026 年 8 月 9 日</p>
+<p style="color: #666; font-size: 0.9em;">最終更新日: 2026 年 8 月 11 日</p>
 
 ---
 
