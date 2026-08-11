@@ -109,33 +109,7 @@ A place where what you build up day by day takes shape as a scene.
 
 ---
 
-## v1.0.1 (released July 2026)
-
-A follow-up to the initial release. This version adds one-time in-app purchases,
-so you can top up diamonds when you need to.
-
-### 💎 Diamond packs (iOS)
-
-- **¥120**: 120 diamonds
-- **¥600**: 660 diamonds (10% more)
-- **¥1,200**: 1,440 diamonds (20% more)
-
-Payment goes through the standard App Store flow.
-
-For the full terms of sale, see
-[Legal & Consumer Information](/legal_consumer_info_en.html).
-
-### 🍃 Rest days and rest fruit discontinued
-
-There was no screen for setting a rest day, and the fruit accumulated with no
-visible use, so we removed both. Protecting a day off is now handled solely by
-the **streak protection stone** (💎 30 each in the shop). Turn on
-**Settings → Streak Protection** and one is spent automatically the moment a
-streak would break 🪶
-
----
-
-## v1.0.0 (released late June 2026)
+## v1.0.1 (released 7 July 2026)
 
 The first public release. This version pairs the core loop of keeping a habit
 going with RPG-style growth.
@@ -146,7 +120,8 @@ going with RPG-style growth.
 - Habits (count-based and checklist-based) and to-dos, managed on one screen
 - 11 categories mapped across 6 stats: Fitness, Learning, Health, Spirit,
   Creativity and Contribution
-- Streaks and rest days, so you can keep going without forcing it
+- Streaks, and a **streak protection stone** that is spent automatically the
+  moment a streak would break, so you can keep going without forcing it
 
 #### ⭐ RPG-style growth
 - Completing a habit earns experience and stat points
@@ -186,6 +161,14 @@ going with RPG-style growth.
 - 30 badges that make your accumulated effort visible
 - Earning a badge earns diamonds
 
+#### 💎 Diamond packs (iOS)
+- **¥120**: 120 diamonds
+- **¥600**: 660 diamonds (10% more)
+- **¥1,200**: 1,440 diamonds (20% more)
+
+Payment goes through the standard App Store flow. For the full terms of sale,
+see [Legal & Consumer Information](/legal_consumer_info_en.html).
+
 #### 💎 New user bonus
 - Day 1: 500 diamonds, 3 daily tickets, 3 weekly tickets
 - Days 2–7: 100 diamonds a day
@@ -195,7 +178,6 @@ All of these arrive **the moment you complete your first task of the day**. They
 are a reward for taking a step, not simply for opening the app 🪶
 
 ### ⚠️ Known limitations
-- In-app purchases (diamond packs) arrive in v1.0.1
 - The job mastery system (switching jobs across characters) is planned for v1.1
   and later
 
