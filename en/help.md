@@ -7,7 +7,7 @@ lang: en
 
 # User Guide
 
-<p style="color: #666; font-size: 0.9em;">Last updated: 8 July 2026</p>
+<p style="color: #666; font-size: 0.9em;">Last updated: 9 August 2026</p>
 
 ---
 
@@ -16,8 +16,18 @@ Thank you for using Sabiowl 🪶
 This page walks through each screen with a short video and step-by-step
 instructions. Pick the screen you want from the contents below.
 
-For anything not covered here, please write to us from **My Page → Contact us**
+For anything not covered here, please write to us from **Settings → Contact us**
 in the app.
+
+### Where things are
+
+This page refers to two entry points. It is worth knowing where they are before
+you read on 🪶
+
+| What we call it | Where it is | What it opens |
+|---|---|---|
+| **The bottom menu** | The tabs along the bottom | Home / Challenge / Guild / Calendar |
+| **The menu (☰)** | The icon at the **top right** of Home | Help Guide / Sleeping World / Stats / Change Character / Achievements / Gacha / Friends / Buy Diamonds / Notifications / Settings |
 
 ---
 
@@ -148,6 +158,10 @@ Sabiowl has three kinds of entry: habits, to-dos and events.
 </ol>
 </div>
 
+> If you have Quick Notes turned on, the button at the bottom right becomes a
+> note field instead (see
+> "[Quick Notes](#quick-notes)" below).
+
 ### When a completion is recorded
 
 The moment you tap, it is recorded. If you complete something more than once in
@@ -165,12 +179,46 @@ Pick whichever fits the shape of the habit 🪶
 
 ### Protecting a streak
 
-Go to **My Page → Streak protection** and turn on "Protect streaks
+Go to **Settings → Streak Protection** and turn on "Protect streaks
 automatically". While you have stones in stock, one is **spent automatically**
 the moment a streak would break, and the streak is kept.
 
 Streak protection stones are available in the shop for 💎 30 each.
 If you fall ill partway through, this quietly protects what you have built 🪶
+
+### Quick Notes
+
+Somewhere to write things down before you decide what they are. For anything you
+have thought of but not yet made into an event, a to-do or a habit: write it
+down now and sort it out later 🪶
+
+**Getting started**
+
+<div class="step-list">
+<ol>
+<li>Turn on "Settings → Quick Notes"</li>
+<li>The button at the bottom right of Home becomes a note field</li>
+<li>Write down whatever came to mind</li>
+<li>Later, tap the note and choose "Save as Event", "Save as To-Do" or "Save as Habit"</li>
+</ol>
+</div>
+
+**Writing by voice**
+
+Tap the microphone in the input field and what you say becomes text.
+The transcription is done by your device's operating system: **the audio itself
+is never sent to our servers**. See Article 2 of the
+[Privacy Policy](/privacy_policy_en.html) for details.
+
+**Finding and restoring**
+
+- The search field at the top filters the notes currently shown, and highlights
+  matches in yellow
+- Deleted notes go to the trash, so you can restore them afterwards
+
+> If you would rather not use Quick Notes, you can turn it off again under
+> **Settings → Quick Notes**. While it is off, the button at the bottom right of
+> Home works as "+" (add) as usual.
 
 ### Archive vs. Trash
 
@@ -182,8 +230,8 @@ Swipe a habit card left or right for two ways to tidy up:
 | **Trash** (swipe left) | Scheduled for deletion | Restore within 30 days; deleted permanently after that |
 
 Both show a confirmation dialog first, so you cannot do either by accident.
-Archived habits are under **My Page → Archive**, and habits waiting to be
-deleted are under **My Page → Trash**. You can review and restore from either.
+Open **Archive** from the filter bar above the habit list on Home: it has two
+tabs, **Archive** and **Trash**, and you can review and restore from either.
 
 <p class="back-to-toc"><a href="#contents">↑ Back to contents</a></p>
 
@@ -286,9 +334,29 @@ From the app bar on the battle screen you can switch between 1x, 1.5x, 2x and
 3x. Speed it up when you are in a hurry, or keep it at 1x when you want to watch
 it play out 🪶
 
+### Battle tickets
+
+Setting out from the guild costs **3 battle tickets**.
+You earn **one ticket for every habit you complete** (up to 30, which is ten
+battles' worth).
+
+In other words, what you need in order to fight comes from what you have built
+up that day. Each small step is also preparation 🪶
+
+The guild icon in the bottom menu shows where you stand:
+
+| Badge | What it means |
+|---|---|
+| **✓ × N** | You can set out (N is how many battles you have left today) |
+| **🔒** | You have reached today's battle limit |
+| No badge | You do not have 3 tickets yet |
+
+The guild screen also tells you how far off you are: "Complete N more habits to
+deploy."
+
 ### How many battles a day
 
-There is a daily limit — 10 by default.
+Separately from tickets, there is a daily limit — 10 by default.
 You can also expand it by up to 5 more slots from the shop.
 
 If you see "No more challenges today", the count resets when the date changes at
@@ -364,7 +432,7 @@ that suits them — their job — and your own growth becomes their strength.
 
 <div class="step-list">
 <ol>
-<li>Go to My Page → "Change character" to see the ones you own</li>
+<li>Open the menu (☰) → "Change Character" to see the ones you own</li>
 <li>Choose one you like and tap "Use" to travel with them instead</li>
 <li>The stats screen shows how your six abilities are growing</li>
 <li>You can also assign stat points by hand when you level up</li>
@@ -400,15 +468,15 @@ The gacha is designed as a small reward for what you build up day by day.
 
 | Kind | How you get tickets | Main rewards |
 |---|---|---|
-| **Daily** | Logging in and completing habits | Coins, XP boosts, titles, weapons |
-| **Weekly** | Completing weekly missions | Diamonds, XP boosts, **an SSR character (0.5%)** |
+| **Daily** | Logging in and completing habits | Experience, XP boosts, weapons |
+| **Weekly** | Completing weekly missions | Diamonds, XP boosts, weapons, **an SSR character (0.5%)** |
 | **Monthly** | Guaranteed SSR for 21 days completed this month | **A guaranteed unowned SSR character** |
 
 **How to draw**
 
 <div class="step-list">
 <ol>
-<li>Go to My Page → "Gacha"</li>
+<li>Open the menu (☰) → "Gacha"</li>
 <li>Tap "Draw" for whichever tickets you have</li>
 <li>After the animation, your reward is added (you can check the history at any time)</li>
 </ol>
@@ -461,9 +529,9 @@ like to support the app, you can buy diamonds as well.
 
 <div class="step-list">
 <ol>
-<li>Go to My Page → "Buy diamonds"</li>
+<li>Open the menu (☰) → "Buy Diamonds"</li>
 <li>Choose the pack you want</li>
-<li>Authenticate with your Apple ID on iOS, or your Google account on Android</li>
+<li>Authenticate with your Apple ID</li>
 <li>Once the purchase completes, the diamonds are added automatically</li>
 </ol>
 </div>
@@ -472,7 +540,7 @@ like to support the app, you can buy diamonds as well.
 
 - If you are a minor, please get your guardian's consent first
 - Purchases can be restored if you reinstall
-- Returns and refunds follow Apple's and Google's terms (see
+- Returns and refunds follow Apple's terms (see
   [Legal & Consumer Information](/legal_consumer_info_en.html) for details)
 
 <p class="back-to-toc"><a href="#contents">↑ Back to contents</a></p>
@@ -486,7 +554,7 @@ like to support the app, you can buy diamonds as well.
 - 🪶 [Privacy Policy](/privacy_policy_en.html) — how we handle your personal information
 - 📜 [Terms of Use](/terms_of_service_en.html) — the conditions for using Sabiowl
 
-If anything is unclear, please write to us from **My Page → Contact us** in the
+If anything is unclear, please write to us from **Settings → Contact Us** in the
 app. We will do our best to help you enjoy Sabiowl at your own pace 🪶
 
 <p style="color: #666; font-size: 0.9em; text-align: center; margin-top: 40px;">

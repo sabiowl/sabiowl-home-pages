@@ -7,9 +7,9 @@ lang: en
 
 # Sabiowl
 
-**Sabiowl** is a mobile app for iOS and Android that helps you keep up your daily
-habits, tasks and plans by making them feel like a game. Every time you record a
-habit you earn experience, and your character levels up — an RPG-style sense of
+**Sabiowl** is a mobile app for iOS that helps you keep up your daily habits,
+tasks and plans by making them feel like a game. Every time you record a habit
+you earn experience, and your character levels up — an RPG-style sense of
 growth that makes it easier to keep going.
 
 This is the official site for Sabiowl. It collects the app's features, legal
@@ -29,6 +29,12 @@ documents, contact details and release notes.
   of game design to keep motivation up.
 - **Battles** — put the stats you have built through your habits to work against
   enemies.
+- **The sleeping world** — every habit you complete gathers a fragment of a
+  scene. Once every fragment has colour, the scene begins to move. It is where
+  what you have built up stays visible.
+- **Monthly challenges** — a shared goal that every user works toward together.
+  There is nothing extra to do: completing a habit in the target category counts
+  towards it automatically.
 
 ## The name
 
@@ -50,7 +56,8 @@ documents, contact details and release notes.
 
 ## 🌐 Links
 
-- **The app**: coming soon on Google Play and the App Store
+- **The app**: available on the App Store. It is currently released in the
+  Japanese App Store only; other regions are coming
 - **Official X (Twitter)**: [@sabiowlapp](https://x.com/sabiowlapp) — news and updates
 - **Contact**: from inside the app, open **Settings → Contact us**
 

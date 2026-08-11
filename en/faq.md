@@ -7,7 +7,7 @@ lang: en
 
 # Frequently Asked Questions
 
-<p style="color: #666; font-size: 0.9em;">Last updated: 27 June 2026</p>
+<p style="color: #666; font-size: 0.9em;">Last updated: 9 August 2026</p>
 
 ---
 
@@ -51,7 +51,7 @@ at something becomes a strength 🪶
 
 | Mode | What it means |
 |---|---|
-| **Guest** | Every feature is available without signing in. Your data is tied to a session on this device |
+| **Guest** | Every feature is available without signing in. Your data is tied to a temporary session on our servers, so you may not be able to carry it over if you delete and reinstall the app |
 | **Linked** | Link a Google or Apple account and your data is tied to that account, so you can restore it on another device |
 
 We recommend linking early if you want your data kept for the long term.
@@ -60,7 +60,11 @@ You can link at any time from **Settings → Link account**.
 ### Q. Where is my data stored?
 
 Your data — habits, timeline, characters, gacha history and so on — is stored on
-this service's backend servers (Render, Singapore region).
+this service's backend servers (Singapore region).
+
+One exception: the body of events imported from Google Calendar (title, date and
+time, notes) is **stored only on your device** and is never sent to our servers.
+
 See the [Privacy Policy](/privacy_policy_en.html) for details.
 
 ---
@@ -127,10 +131,10 @@ Apple's built-in controls cover this:
 
 If you are a minor, please get your guardian's consent before making a purchase.
 
-### Q. When will purchases work on Android?
+### Q. Is there an Android version?
 
-As of v1.0.1, purchases are available on iOS only. Android support is planned
-for a future update 🪶
+Sabiowl is currently released **on iOS only**. Android support — both for the app
+itself and for purchases — is planned for a future update 🪶
 
 ---
 
@@ -142,17 +146,13 @@ Please try the following:
 
 1. Check your internet connection (try both Wi-Fi and mobile data)
 2. Close the app completely from the task switcher, then reopen it
-3. If your iOS or Android version is old, update to the latest
+3. If your iOS version is old, update to the latest
 4. If none of that helps, write to us from the contact form
 
 ### Q. I am not getting notifications
 
-Check your notification settings at the OS level:
-
-- **iOS**: Settings → Sabiowl → Notifications, and turn them on
-- **Android**: Settings → Apps → Sabiowl → Notifications, and turn them on
-
-Also check **Settings → Reminders** inside the app.
+Turn notifications on at the OS level, under **Settings → Sabiowl →
+Notifications**, and also check **Settings → Reminders** inside the app.
 
 ### Q. The app freezes
 
