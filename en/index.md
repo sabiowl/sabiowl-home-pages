@@ -35,6 +35,8 @@ documents, contact details and release notes.
 - **Monthly challenges** — a shared goal that every user works toward together.
   There is nothing extra to do: completing a habit in the target category counts
   towards it automatically.
+- **English or Japanese** — switch at any time under
+  **Settings → Display language** (available from v1.1.0).
 
 ## The name
 

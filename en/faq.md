@@ -7,7 +7,7 @@ lang: en
 
 # Frequently Asked Questions
 
-<p style="color: #666; font-size: 0.9em;">Last updated: 11 August 2026</p>
+<p style="color: #666; font-size: 0.9em;">Last updated: 27 August 2026</p>
 
 ---
 
@@ -56,6 +56,21 @@ at something becomes a strength 🪶
 
 We recommend linking early if you want your data kept for the long term.
 You can link at any time from **Settings → Link account**.
+
+### Q. Can I use the app in English?
+
+Yes. As of v1.1.0 the whole app is available in English.
+
+Choose **日本語 / English** under **Settings → Display language**. The first time
+you use Sabiowl we follow your device's language, so a device set to English
+starts in English.
+
+It is not only the screens: notifications, enemy and character names, and
+challenge details switch over as well. The steps are in the
+[User Guide → 🌏 Switching the display language](/en/help.html#-switching-the-display-language) 🪶
+
+The app itself is still released in the Japanese App Store only. We will let you
+know as we open other regions, once things look stable.
 
 ### Q. Where is my data stored?
 
@@ -153,6 +168,21 @@ Please try the following:
 
 Turn notifications on at the OS level, under **Settings → Sabiowl →
 Notifications**, and also check **Settings → Reminders** inside the app.
+
+### Q. Battles I do not remember starting keep running on Home
+
+That will be **auto battle** in the frame. If you have set how many times to take
+on an opponent at the guild, those battles are run for you when you come back to
+Home.
+
+To stop it, open "Guild" from the bottom menu and switch off "Auto battle" from
+the ⚙️ gear at the top right. Setting the count on the opponent's card back to
+zero also stops it.
+
+The remaining count goes down by **one per battle, whether you win or lose**
+(this changed in v1.1.1). In earlier versions a loss did not reduce it, which
+could leave you facing the same opponent over and over. Please update to the
+latest version 🪶
 
 ### Q. The app freezes
 

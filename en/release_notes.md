@@ -7,12 +7,110 @@ lang: en
 
 # Sabiowl Release Notes
 
-<p style="color: #666; font-size: 0.9em;">Last updated: 11 August 2026</p>
+<p style="color: #666; font-size: 0.9em;">Last updated: 27 August 2026</p>
 
 ---
 
 What changed in each version of Sabiowl, newest first.
 What we are preparing next is at the end.
+
+---
+
+## v1.1.1 (submitted for review)
+
+<p style="color: #666; font-size: 0.9em;">
+We are preparing to submit this version to the App Store. The release date will
+be settled once it passes review, and we will add it to this page then 🪶
+</p>
+
+A version that refines how battles feel, and how the day-to-day recording works.
+
+### ⚔️ Battle presentation
+
+- The final blow now has a finishing effect, and the vibration on a win has been
+  rebuilt
+- All six party characters now fight with a weapon-swing attack motion
+
+### ⚙️ Battle settings in one place
+
+- The gear icon at the top right of the guild screen now holds **auto battle,
+  battle speed and skip (⏭)** together
+- Battles running in the frame on Home are capped at **3x**, so the attack
+  motions do not pass by unseen
+
+### 📝 Reordering checklist items
+
+- On the "Add habit" and "Edit habit" screens, checklist items can now be dragged
+  into whatever order you like using the handle on the left
+
+### 🔧 Fixes
+
+- The app now recovers on its own when an old sign-in token left on the device
+  stopped it from starting
+- Fixed the remaining count not going down when an auto battle was lost, which
+  left you facing the same opponent over and over
+- Fixed the pre-battle sheet running off the bottom of the screen, which could
+  make "Set out" impossible to tap
+- Fixed taps that were not recorded while the connection was busy, where only the
+  vibration came back. When a tap cannot be recorded, we now say so rather than
+  ending in silence
+
+---
+
+## v1.1.0 (released August 2026)
+
+The version that makes Sabiowl available in English.
+
+### 🌏 English
+
+- The whole app can now be displayed in English
+- Choose **日本語 / English** under **Settings → Display language** (the first
+  time, we follow your device's language)
+- It is not only the screens: notifications, enemy and character names, and
+  challenge details all switch over as well
+- This site now has an English version too
+
+> The app is still released in the Japanese App Store only. We will open other
+> regions once we have seen that things are stable 🪶
+
+### ⚔️ Auto battle and skip
+
+- Battles now run by themselves in the frame on Home. Decide at the guild how
+  many times to take on each opponent, and they are worked through as you come
+  back to Home
+- Added **⏭ (skip)** to the battle speeds, for when you only want the result
+
+### 🎖 Job mastery
+
+- Your job now gains mastery every time you fight. The gauge is on the character
+  screen
+- Carrying a job you have mastered across to another character is something we
+  will bring in a later update
+
+### 🎯 Challenges and habits
+
+- Challenge results can now reach you as a notification (turn it on under
+  **Settings → Notifications → Challenge Results**)
+- A habit's reset cycle now actually takes effect: weekly and monthly habits are
+  judged on the total count within that period
+- Screens you are opening for the first time now carry a short note you can read
+  on the spot
+
+### 🎰 Gacha and shop
+
+- The gacha odds can now be read from the ticket list
+- The exchange pieces you collect now have somewhere to go: XP boosts, battle
+  tickets and character exchange tickets
+- Fixed items with no way to buy them appearing in the purchase list, and weapons
+  won from the gacha being sellable
+
+### ✨ Other
+
+- The initial download is about 57% smaller
+- An enemy's listed attack now matches the damage you actually take
+- Notes in the Quick Notes trash can be permanently deleted all at once
+- Recording a habit is reflected more quickly
+- Fixed Sabi overlooking weekly and monthly habit completions
 
 ---
 
@@ -183,7 +281,7 @@ are a reward for taking a step, not simply for opening the app 🪶
 
 ---
 
-## What comes next (v1.1 and later)
+## What comes next (v1.2 and later)
 
 We are preparing the following while we watch how the app is used after launch.
 **The contents and timing may change**, so please read this as a rough guide.
@@ -193,10 +291,14 @@ We are preparing the following while we watch how the app is used after launch.
   yet available
 - We will announce the timing in the app beforehand
 
-### ⚔️ Job mastery
-- Moving on from the v1.0 design where each character is tied to one job, toward
-  switching and mastering jobs across characters
-- Skills you have built up in a job should carry over to other characters
+### 🌏 Release in English-speaking regions
+- English itself is done as of v1.1.0. What remains is opening the regions
+- Once things look stable in Japan, we will open the US, the UK and Australia in
+  that order
+
+### ⚔️ More job mastery
+- v1.1.0 brought the part where a job grows as you fight with it
+- Next comes carrying a job you have mastered across to another character
 
 ### 💎 Crystal inventory
 - Equip the crystals you have collected to draw out their effects

@@ -7,7 +7,7 @@ lang: en
 
 # User Guide
 
-<p style="color: #666; font-size: 0.9em;">Last updated: 11 August 2026</p>
+<p style="color: #666; font-size: 0.9em;">Last updated: 27 August 2026</p>
 
 ---
 
@@ -42,6 +42,7 @@ you read on 🪶
 - [🦉 Characters](#-characters)
 - [🎰 Gacha](#-gacha)
 - [💎 Buying diamonds (premium)](#-buying-diamonds-premium)
+- [🌏 Switching the display language](#-switching-the-display-language)
 - [❓ FAQ](/en/faq.html)
 
 <style>
@@ -122,6 +123,25 @@ working on, and below it sit today's habits, to-dos and events.
 </ol>
 </div>
 
+### Auto battle in the frame
+
+Decide at the guild how many times to take on each opponent, and battles run by
+themselves inside the frame. The day's fighting is worked through gradually
+while you watch.
+
+<div class="step-list">
+<ol>
+<li>Open "Guild" from the bottom menu and turn on "Auto battle" from the ⚙️ gear at the top right</li>
+<li>Set how many times to take on each opponent, in the counter that appears on their card</li>
+<li>Go back to Home, and the opponents you set are taken on in turn</li>
+</ol>
+</div>
+
+Each battle takes one off the remaining count, and it stops at zero (win or
+lose, it counts as one). Battles in the frame run at up to 3x, so you can still
+watch the attacks play out.
+To pause it, switch it off from the same gear 🪶
+
 <p class="back-to-toc"><a href="#contents">↑ Back to contents</a></p>
 
 ---
@@ -176,6 +196,13 @@ a day, the count is recorded too.
 | **To-do** | When it finishes in one go, like a bank errand | Tap the completion mark once |
 
 Pick whichever fits the shape of the habit 🪶
+
+**Reordering checklist items**
+
+On the "Add habit" and "Edit habit" screens, press and hold the handle (⣿) at
+the left of an item to drag it into whatever order you like. Putting them in the
+order you actually work through them makes something like a morning routine
+easier to follow.
 
 ### Protecting a streak
 
@@ -328,11 +355,22 @@ Winning earns EXP, coins, weapons and colour fragments.
 </ol>
 </div>
 
-**Battle speed**
+**Battle settings (auto battle, speed, skip)**
 
-From the app bar on the battle screen you can switch between 1x, 1.5x, 2x and
-3x. Speed it up when you are in a hurry, or keep it at 1x when you want to watch
-it play out 🪶
+The **⚙️ gear** at the top right of the guild screen opens the battle settings
+together in one place.
+
+| Setting | What it does |
+|---|---|
+| **Auto battle** | Whether battles run by themselves in the frame on Home (see [Auto battle in the frame](#auto-battle-in-the-frame)) |
+| **Battle speed** | Five steps: 1x, 1.5x, 2x, 3x and ⏭ (skip) |
+
+While anything other than 1x is selected, the current speed is shown in small
+text to the left of the gear. You can see where you stand without opening
+anything, which makes it easy to find your way back to 1x.
+
+If you want to change it mid-fight, the same five steps are also at the top of
+the battle screen 🪶
 
 ### Battle tickets
 
@@ -542,6 +580,30 @@ like to support the app, you can buy diamonds as well.
 - Purchases can be restored if you reinstall
 - Returns and refunds follow Apple's terms (see
   [Legal & Consumer Information](/legal_consumer_info_en.html) for details)
+
+<p class="back-to-toc"><a href="#contents">↑ Back to contents</a></p>
+
+---
+
+## 🌏 Switching the display language
+
+Sabiowl can be used in **English or Japanese**.
+
+<div class="step-list">
+<ol>
+<li>Open the menu (☰) → "Settings"</li>
+<li>Tap "Display language" under "Language"</li>
+<li>Choose "English" or "日本語"</li>
+</ol>
+</div>
+
+The change takes effect straight away and is kept the next time you open the
+app. The first time you use Sabiowl we follow your device's language, so a
+device set to English starts in English.
+
+It is not only the screens: notifications, enemy and character names, and
+challenge details switch over as well. The pages on this site have a Japanese
+version too, reachable from the link at the top 🪶
 
 <p class="back-to-toc"><a href="#contents">↑ Back to contents</a></p>
 
